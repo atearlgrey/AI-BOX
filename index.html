@@ -1,0 +1,19 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    DEMO FRS
+</body>
+<script>
+    let url_Server = "ws://{{FRS_ip}}/fcsreconizedresult";
+    let websocket = new WebSocket(url_Server);
+
+    websocket.onmessage = function(event) {
+        console.log(event.data);
+    }
+</script>
+
+</html>
